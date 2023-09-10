@@ -1,0 +1,19 @@
+{
+    "name": "ydid/infinite-timeline",
+    "type": "symfony-bundle",
+    "description": "An infinite and interactive timeline",
+    "autoload": {
+        "psr-4": {
+            "Ydid\\InfiniteTimeline\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ydid"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "symfony/framework-bundle": "^6.0"
+    }
+}
