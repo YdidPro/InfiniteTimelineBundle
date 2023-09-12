@@ -1,0 +1,3 @@
+ydid_infinite_timeline_bundle.routes:
+  type: annotation
+  resource: '../src/Controller'

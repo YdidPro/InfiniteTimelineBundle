@@ -1,19 +1,26 @@
 {
-    "name": "ydid/infinite-timeline",
+    "name": "ydid/infinite-timeline-bundle",
+    "version": "0.0.1",
     "type": "symfony-bundle",
     "description": "An infinite and interactive timeline",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1"
+    },
     "autoload": {
         "psr-4": {
-            "Ydid\\InfiniteTimeline\\": "src/"
+            "YDID\\InfiniteTimelineBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "YDID\\InfiniteTimelineBundle\\Tests": "tests/"
         }
     },
     "authors": [
         {
-            "name": "Ydid"
+            "name": "Ydid",
+            "email": "ydid.pro@gmail.com"
         }
-    ],
-    "require": {
-        "php": ">=8.1",
-        "symfony/framework-bundle": "^6.0"
-    }
+    ]
 }
