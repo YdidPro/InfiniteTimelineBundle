@@ -1,6 +1,5 @@
 {
     "name": "ydid/infinite-timeline-bundle",
-    "version": "0.0.1",
     "type": "symfony-bundle",
     "description": "An infinite and interactive timeline",
     "license": "MIT",
