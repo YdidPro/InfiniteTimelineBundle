@@ -1,6 +1,3 @@
-<div id="events">
-
-</div>
 <div class="" id="timeline-object">
     <div id="timeline-opts">
         <div id="sizeTimeline">
@@ -25,7 +22,6 @@
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         const scrollContainer = document.getElementById("timeline");
-        const eventContainer = document.getElementById('events');
         scrollContainer.addEventListener("wheel", (evt) => {
             evt.preventDefault();
             scrollContainer.scrollLeft += evt.deltaY;
