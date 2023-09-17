@@ -1,0 +1,5 @@
+framework:
+    assets:
+        packages:
+            ydid_infinite_timeline:
+                base_path: "bundles/ydidinfinitetimeline"

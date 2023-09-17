@@ -1,11 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infinite Timeline</title>
-</head>
-<body>
-    <h1>Infinite Timeline test</h1>
-</body>
-</html>
+<div id="events">
+
+</div>
+<div class="" id="timeline-object">
+    <div id="timeline-opts">
+        <div id="sizeTimeline">
+            <button class="short"><i class="fa-solid fa-display focus-opts"></i></button>
+            <button class="middle"><i class="fa-solid fa-display"></i></button>
+            <button class="big"><i class="fa-solid fa-display"></i></button>
+        </div>
+        <div id="searchTimeline">
+            <input type="text" id="searchInput" placeholder="Chercher une date/mois/année ...">
+        </div>
+        <div id="stepTimeline">
+            <span class="rangeLabel">1 an</span>
+            <input type="range" class="rangeTimeline" id="rangeTimeline" value="2" min="0" max="8">
+        </div>
+    </div>
+    <div id="timeline">
+        <div class="previousTimeline timelines"></div>
+        <div class="currentTimeline timelines"></div>
+        <div class="nextTimeline timelines"></div>
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const scrollContainer = document.getElementById("timeline");
+        const eventContainer = document.getElementById('events');
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+        });
+    });
+</script>

@@ -1,0 +1,11 @@
+<div class="timeline-values">
+    {% for line in timeline %}
+        <span id="{{line['year']}}" data-date="{{line['year']}}" class="elem unit {{line['dizaine'] ? 'year' : ''}} Y{{line['year']}}">
+            {% if line['year'] >= 10000 %}
+                {{ line['year'] | number_format(0, ',', ' ') }}
+            {% else %}
+                {{ line['year'] }}
+            {% endif %}
+        </span>
+    {% endfor %}
+</div>

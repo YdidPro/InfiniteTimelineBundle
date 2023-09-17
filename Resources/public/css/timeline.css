@@ -1,0 +1,204 @@
+
+/* Works on Firefox */
+#timeline {
+    scrollbar-width: 5px;
+    scrollbar-color: rgb(29, 29, 29) rgb(255, 255, 255);
+}
+
+/* Works on Chrome, Edge, and Safari */
+#timeline::-webkit-scrollbar {
+    width: 5px;
+}
+
+#timeline::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+#timeline::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: 7px solid rgb(255, 255, 255);
+}
+
+#timeline-object {
+    position: absolute;
+    bottom: 0;
+    left: 3.5rem;
+    width: 95%;
+    border-radius: 15px;
+    height: 20vh;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px -10px 13px 0px;
+}
+
+#timeline-opts {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+    border-top: 1px solid rgba(0, 0, 0, 0.137);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 50px;
+}
+
+#timeline {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    flex-shrink: 0;
+    height: 14vh;
+}
+
+.timelines {
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 100vw;
+    height: 200px;
+    flex-shrink: 0;
+}
+
+.timelines > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.timelines > div span {
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.timelines > div span::before {
+    content: '';
+    position: relative;
+    top: -25px;
+    left: 50%;
+    border-right: 1px solid rgba(0, 0, 0, 0.171);
+}
+
+.timeline-values .unit {
+    font-size: 10px;
+}
+
+.timeline-values .month {
+    font-size: 15px;
+}
+
+.timeline-values .year {
+    font-size: 20px;
+}
+
+.focus {
+    color: orange;
+    font-weight: bold;
+}
+
+.focus-opts {
+    color: orange !important;
+    font-weight: bold;
+}
+
+.focus::before {
+    border-right: 3px solid orange !important;
+}
+
+#sizeTimeline {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#sizeTimeline button {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#sizeTimeline button:hover i {
+    color: black;
+    cursor: pointer;
+}
+
+#sizeTimeline button:hover {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sizeTimeline i {
+    color: rgba(0, 0, 0, 0.671);
+}
+
+#sizeTimeline .short > i {
+    font-size: 15px;
+}
+
+#sizeTimeline .middle > i{
+    font-size: 20px;
+}
+
+#sizeTimeline .big > i {
+    font-size: 25px;
+}
+
+
+#stepTimeline {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 12px;
+}
+
+#stepTimeline .rangeTimeline {
+    width: 100%;
+    max-width: 150px;
+    text-align: center;
+    margin: auto;
+}
+
+#searchTimeline {
+    width: 40%;
+}
+
+#searchTimeline > input {
+    border-radius: 5px;
+    height: 25px;
+    width: 100%;
+    max-width: 300px;
+    min-width: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.171);
+}
+
+#rangeTimeline::-webkit-slider-thumb {
+/* Changer la couleur du curseur rond sur les navigateurs basés sur WebKit (comme Chrome, Safari) */
+    background-color: orange !important;
+    width: 50px;
+/* Autres styles pour le curseur */
+}
+  
+#rangeTimeline::-moz-range-thumb {
+/* Changer la couleur du curseur rond sur Firefox */
+    background-color: orange !important;
+/* Autres styles pour le curseur */
+}
+  
+#rangeTimeline::-ms-thumb {
+/* Changer la couleur du curseur rond sur Microsoft Edge */
+    background-color: orange !important;
+/* Autres styles pour le curseur */
+}
+
+
+

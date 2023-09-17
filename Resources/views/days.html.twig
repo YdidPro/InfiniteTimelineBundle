@@ -1,0 +1,7 @@
+<div class="timeline-values">
+    {% for line in timeline %}
+        <span id="{{line['datetime']}}" data-date="{{line['datetime']}}" class="elem unit {{line['month'] ? 'month' : ''}} {{line['year'] ? 'year' : ''}}">
+            {{ line['date'] }}
+        </span>
+    {% endfor %}
+</div>
