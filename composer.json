@@ -3,7 +3,6 @@
     "type": "symfony-bundle",
     "description": "An infinite and interactive timeline",
     "license": "MIT",
-    "version": "0.0.6",
     "require": {
         "php": ">=8.1"
     },
